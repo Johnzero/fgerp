@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+import os, sys, openerp
+
+if __name__ == "__main__":
+    if sys.getdefaultencoding() != 'utf-8':
+        reload(sys)
+        sys.setdefaultencoding('utf-8')
+    os.environ["LC_ALL"] = "en_US.UTF-8"
+    
+    openerp.cli.main()
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
